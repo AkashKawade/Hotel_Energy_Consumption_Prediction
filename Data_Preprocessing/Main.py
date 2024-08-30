@@ -1,6 +1,6 @@
 from load_data import load_data
 from decompose_series import decompose_series
-from check_stationarity import check_stationarity
+from Data_SARIMA_Model.check_stationarity import check_stationarity
 from difference_series import difference_series
 from plot_acf_pacf import plot_acf_pacf
 from fit_sarima_model import fit_sarima_model
@@ -9,7 +9,7 @@ from evaluate_model import evaluate_model
 from visualize_forecast import visualize_forecast
 from load_and_combine_excel import load_and_combine_excel
 from calculate_daily_averages import calculate_daily_averages
-from diagnose_model import diagnose_model
+from Data_SARIMA_Model.diagnose_model import diagnose_model
 
 def main():
     # Step 1: Load and process Excel data, then save combined CSV
