@@ -1,6 +1,6 @@
 from load_data import load_data
 from decompose_series import decompose_series
-from Data_SARIMA_Model.check_stationarity import check_stationarity
+from check_stationarity import check_stationarity
 from difference_series import difference_series
 from plot_acf_pacf import plot_acf_pacf
 from fit_sarima_model import fit_sarima_model
@@ -9,11 +9,11 @@ from evaluate_model import evaluate_model
 from visualize_forecast import visualize_forecast
 from load_and_combine_excel import load_and_combine_excel
 from calculate_daily_averages import calculate_daily_averages
-from Data_SARIMA_Model.diagnose_model import diagnose_model
+from diagnose_model import diagnose_model
 
 def main():
     # Step 1: Load and process Excel data, then save combined CSV
-    excel_file_path = 'Hourly_report_Main Kitchen + Cold Storage_Wed Aug 23 2023_to_Fri Aug 23 2024 (1).xlsx'  # Replace with your Excel file path
+    excel_file_path = 'Data_Preprocess_And_SARIMA_model/Hourly_report_Main Kitchen + Cold Storage_Wed Aug 23 2023_to_Fri Aug 23 2024 (1).xlsx'  # Replace with your Excel file path
     csv_combined_path = load_and_combine_excel(excel_file_path)
 
     # Step 2: Calculate daily averages and save to a new CSV
